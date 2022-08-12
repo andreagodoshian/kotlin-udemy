@@ -1,0 +1,12 @@
+package com.example.oopskotlin
+
+open class Vehicle {
+
+    var type:String? = null
+    var model:String? = null
+    var maxSpeed:Int? = null
+
+    fun show() {
+        println("[Type: \"$type\", Model: \"$model\", Max Speed: \"$maxSpeed\"]")
+    }
+}
