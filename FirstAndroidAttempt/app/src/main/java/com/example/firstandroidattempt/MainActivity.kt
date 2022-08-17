@@ -4,6 +4,7 @@ import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.EditText
 import android.widget.TextView
 import androidx.core.view.isVisible
 
@@ -14,6 +15,10 @@ class MainActivity : AppCompatActivity() {
 
     lateinit var button1:Button
     lateinit var button2:Button
+    lateinit var name:EditText
+    lateinit var password:EditText
+    lateinit var multiLine:EditText
+    lateinit var submit:Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,6 +28,10 @@ class MainActivity : AppCompatActivity() {
         myText = findViewById(R.id.textExamlpe)
         button1 = findViewById(R.id.button1)
         button2 = findViewById(R.id.button2)
+        name = findViewById(R.id.editTextName)
+        password = findViewById(R.id.editTextPassword)
+        multiLine = findViewById(R.id.editTextMultiLine)
+        submit = findViewById(R.id.submit)
 
         myText.setTextColor(Color.CYAN)
         myText.setText("This is an example from MainActivity!")
@@ -43,6 +52,10 @@ class MainActivity : AppCompatActivity() {
             myText.isVisible = true
         }
 
+        submit.setOnClickListener {
+            var user:String = name.text.toString()
+            myText.setText(user)
+        }
     }
 
 }
