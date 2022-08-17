@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Android Buttons</string>
+
+    <string-array name="countries">
+        <item>Russia</item>
+        <item>Sweden</item>
+        <item>Germany</item>
+        <item>Canada</item>
+        <item>Pyrenees</item>
+    </string-array>
+</resources>
