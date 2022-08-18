@@ -50,13 +50,12 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
         }
     }
 
-    override fun onItemSelected(p0: AdapterView<*>?, view: View?, index: Int, id: Long) {
+    override fun onItemSelected(parent: AdapterView<*>?, view: View?, index: Int, id: Long) {
         if (parent != null) {
             result.text = parent.getItemAtPosition(index).toString()
         }
     }
 
     override fun onNothingSelected(p0: AdapterView<*>?) {
-        TODO("Not yet implemented")
     }
 }
